@@ -1,0 +1,28 @@
+.app-container {
+    background-color: #121212;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #282828;
+    background-color: #181818;
+  }
+  
+  .app-header h1 {
+    color: #1DB954;
+    margin: 0;
+  }
+  
+  .app-main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
