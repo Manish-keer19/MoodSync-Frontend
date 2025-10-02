@@ -46,8 +46,10 @@ export default function FacialExpression({ setSongs }) {
       }
     }
     
-    axios.get(`http://localhost:3000/songs?mood=${bestExpression}`)
+    // axios.get(`http://localhost:3000/songs?mood=${bestExpression}`)
+    axios.get(`https://moodsync-backend-4ptr.onrender.com/songs?mood=${bestExpression}`)
       .then(response=>{
+        console.log("bestexpression is ", bestExpression);
         setSongs(response.data.songs);
       })
       .catch(err => console.error(err));
